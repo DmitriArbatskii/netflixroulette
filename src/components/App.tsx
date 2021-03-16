@@ -1,5 +1,15 @@
 import React from 'react';
-import '../styles/App.css'
-export const App: React.FC<{}> = () => (
-    <h1>Hello React</h1>
-);
+import "../styles/style.scss";
+import {Header} from './Header';
+import {Sort} from './Sort'
+import {Footer} from './Footer';
+import {Result} from "./Result";
+
+export const App: React.FC<{}> = () => {
+    return <>
+        <Header />
+        <Sort />
+        <Result />
+        <Footer />
+    </>
+}
